@@ -1,0 +1,20 @@
+ Coutdown Timer
+
+ <!-- Timer -->
+<script>
+setInterval(displayHello, 1000);
+
+function displayHello() {
+    var a = document.getElementById("quetimer").innerHTML;
+    var b = parseInt(a)-1;
+    document.getElementById("quetimer").innerHTML = b;
+    if(b==0){
+        document.getElementById("quetimer").style.display = "none"
+    }
+}
+</script>
+<!-- Timer -->
+
+<!-- Timer -->
+    <span id="quetimer">30</span>
+<!-- Timer -->
